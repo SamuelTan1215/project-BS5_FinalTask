@@ -1,0 +1,10 @@
+
+.custom-opacity{
+    opacity: 0;
+}
+
+.custom-show-text:hover .custom-opacity{
+    opacity:1;
+    transition: 1.5s;
+}   
+

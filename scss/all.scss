@@ -1,10 +1,14 @@
 
 @import "./bootstrap-scss/bootstrap.scss";
 
+@import "./custom-utilities/font";
+@import "./custom-utilities/rounded";
+@import "./custom-utilities/hover";
+@import "./custom-utilities/opacity-text";
+@import "./custom-utilities/utilities/header-img";
+@import "./custom-utilities/utilities/border-none";
+@import "./custom-utilities/utilities/textarea-resize-none";
 
-body{
-    font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", PingFang, STHeiti;
-}
-.kalam{
-    font-family: 'Kalam', cursive;
-}
+
+
+

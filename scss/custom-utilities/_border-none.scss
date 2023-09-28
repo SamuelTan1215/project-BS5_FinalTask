@@ -1,0 +1,4 @@
+.pagination-border-none {
+    --bs-pagination-border-width: 0; /* 設定為 0 去掉外框 */
+    border: none; /* 去掉所有邊框 */
+}

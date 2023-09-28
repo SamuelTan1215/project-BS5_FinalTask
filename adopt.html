@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <title>撿到寶_主頁-幫助更多浪浪</title>
+    <title>撿到寶_領養專區</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content='我們是一群貓奴才狗奴才， 希望能透過自己小小的力量幫助浪貓浪狗們， 可我們沒什麼錢錢，但我們喜歡畫畫、喜愛貓狗， 於是想到個兩全其美的好法子！ 如果您購買我們的寵物似顏繪服務， 我們將會把設計費100%全數捐給浪浪們！ 您出錢，我出力，合作無間讓浪浪有飯吃。' >	
@@ -23,20 +23,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/all.css">
     <script src="./js/bootstrap.bundle.min.js" defer></script>
-    <script src="./js/jquery-3.7.0.min.js" ></script> <!--加了defer反而不能運作-->
-    <script src="./js/all.js"></script>
     
 </head>
 
 <body>
     <!--navbar start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container"><!--需要改為container-fluid嗎-->
+        <div class="container">
 
           <a class="navbar-brand" href="./index.html">
             <h1><img src="./images/logo.png" alt="撿到寶首頁logo" width="119px" height="40px"></h1>
           </a>
-
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,16 +41,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item mx-3">
-                <a class="nav-link link-custom-color" aria-current="page" href="#">首頁</a>
+                <a class="nav-link"  href="./index.html">首頁</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link link-test" href="./service.html">服務介紹</a>
+                <a class="nav-link" href="./service.html">服務介紹</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="./work.html">設計作品</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./adopt.html">領養專區</a>
+                <a class="nav-link link-custom-color" aria-current="page" href="./adopt.html">領養專區</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link bg-custom-color rounded-pill px-5 hover-shadow text-center" href="./form.html">毛孩似顏繪</a>
@@ -64,117 +61,95 @@
         </div>
     </nav>
 
-      <!--header start-->
 
-        <!--桌面專用圖片-->
-      <div class="index-header my-5 d-none d-md-block position-relative" style="background-image: url(./images/home.png);">
-          <a  href="./form.html" > 
-            <img src="./images/btn.png" alt="Image 1" class="img-fluid hover-image-btn1 position-absolute bottom-0 end-5"> <!--hover時換圖，使用jq製作。不知道業界一般做法是？-->
-          </a>
-      </div>
-         <!--手機專用圖片-->
-      <div class="index-header-phone mb-5 d-md-none" style="background-image: url(./images/home_mobile.png);"></div>
-      
-         
 
-      <section class="container my-4">
-        <div class="row flex-column-reverse flex-md-row">
-            <div class="col-md-6">
-                <img src="./images/home01.png"  width="648px" height="486px" class="img-fluid" alt="home01圖片"> <!--為什麼圖片大小沒有正確顯示，開發工具查看實際顯示636w477h-->
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="ps-4">
-                    <h2 class="kalam h5 text-warning text-center text-md-start">Service</h2>  
-                    <!--Q.google font 的字體，我選擇noto sans regulart 和 kalam700，在body設定noto sans，如果部分字體要使用kalam 我另外寫一個class做使用，這樣寫法合理嗎-->
-                    <h3 class="kalam fw-bold h2 text-center text-md-start ">您出錢 我出力 <br> 一起助浪浪</h3>
-                    <p class="lh-lg">
-                        我們是一群貓奴才狗奴才， <br>希望能透過自己小小的力量幫助浪貓浪狗們， <br>可我們沒什麼錢錢，但我們喜歡畫畫、喜愛貓狗， <br>於是想到個兩全其美的好法子！ <br>如果您購買我們的寵物似顏繪服務， <br>我們將會把設計費100%全數捐給浪浪們！<br> 您出錢，我出力，合作無間讓浪浪有飯吃，讚啦！
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
+    <section class="container py-5">
 
-      <section >
-        <div>
-            <img class="d-block mx-auto py-5" src="./images/title01.png" alt="title01圖片">
-        </div>
-        <div class="container">
-            <div class="row row-cols-2 row-cols-md-4 g-4">
-                <div class="col position-relative custom-show-text">
-                  <img src="./images/05.png" alt="05圖片" class=" rounded-5 img-fluid" width="312px" height="312px">
-                  <p class="custom-opacity position-absolute bottom-5 start-10 text-white kalam fw-light lh-lg">
-                    designer <br> <strong class="fw-bold h5">Meili</strong>
-                  </p>
-                </div>
-                <div class="col position-relative custom-show-text">
-                  <img src="./images/07.png" alt="07圖片" class="rounded-5 img-fluid" width="312px" height="312px">
-                  <p class="custom-opacity position-absolute bottom-5 start-10 text-white kalam fw-light lh-lg">
-                    designer <br> <strong class="fw-bold h5">Meili</strong>
-                  </p>
-                </div>
-                <div class="col position-relative custom-show-text">
-                  <img src="./images/06.png" alt="06圖片" class="rounded-5 img-fluid" width="312px" height="312px">
-                  <p class="custom-opacity position-absolute bottom-5 start-10 text-white kalam fw-light lh-lg">
-                    designer <br> <strong class="fw-bold h5">Meili</strong>
-                  </p>
-                </div>
-                <div class="col position-relative custom-show-text">
-                  <img src="./images/Michael.png" alt="Michael圖片" class="rounded-5 img-fluid" width="312px" height="312px">
-                  <p class="custom-opacity position-absolute bottom-5 start-10 text-white kalam fw-lighter lh-lg">
-                    designer <br> <strong class="fw-bold h5">Meili</strong>
-                  </p>
-                </div>
-            </div>
-            <div class="div text-center py-5">
-                <a href="#" class="btn px-5 py-2 d-inline-block border border-custom-color-dark border-1 rounded-pill me-3 hover-custom-color">查看更多作品</a>
-                <a href="#" class="btn btn-custom-color  px-5 py-2 d-none d-md-inline-block  rounded-pill  hover-shadow">客製毛孩似顏繪</a>
-            </div>
-        </div>
-      </section>
-
-      <section class="container">
-
-        <div class="text-center mb-5">
+        <div class="text-center mb-4">
           <img class="mb-2" src="./images/title02.png" alt="title02圖片">
           <h4 class="h6">這裡是在還在等家的浪浪們，若您正巧在找個家人，不訪來認識一下唄</h4>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-3">
           <div class="col my-3">
-            <div class="card shadow-sm rounded-4 border-0">
-              <img src="./images/dog01.png" class="card-img-top hover-image-dog01 rounded-top-4" alt="dog01">
+            <div class="card shadow rounded-4 border-0 rounded-4 border-0">
+              <img src="./images/dog01.png" class="card-img-top  rounded-top-4 rounded-top-4" alt="dog01">
               <div class="card-body">
                 <h5 class="card-title h6 fw-bold">等家中-華仔</h5>
                 <p class="card-text">目前7個月大的華仔，是個愛笑的貪吃鬼，喜歡吃西瓜還有蓮霧，是一隻吃素的乖狗狗，會挑食不喜歡...</p>
-                <a href="#" class="btn w-100 kalam fw-bold border-top pt-3 hover-custom-text-color">More</a>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
               </div>
             </div>
           </div>
           <div class="col my-3">
-            <div class="card shadow-sm rounded-4 border-0">
-              <img src="./images/04.png" class="card-img-top hover-image-dog02 rounded-top-4" alt="04">
+            <div class="card shadow rounded-4 border-0">
+              <img src="./images/04.png" class="card-img-top  rounded-top-4" alt="04">
               <div class="card-body">
                 <h5 class="card-title h6 fw-bold">等家中-小呆</h5>
                 <p class="card-text">小呆有著圓圓的大眼睛，一歲的他來自台中，原本陪著一位老奶奶生活，上個月奶奶行動不便不能再陪...</p>
-                <a href="#" class="btn w-100 kalam fw-bold border-top pt-3 hover-custom-text-color">More</a>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
               </div>
             </div>
           </div>
           <div class="col my-3">
-            <div class="card shadow-sm rounded-4 border-0"> 
-              <img src="./images/08.png" class="card-img-top hover-image-dog03 rounded-top-4" alt="08">
+            <div class="card shadow rounded-4 border-0 ">
+              <img src="./images/08.png" class="card-img-top  rounded-top-4" alt="08">
               <div class="card-body">
                 <h5 class="card-title h6 fw-bold">等家中-Snow</h5>
                 <p class="card-text">看起來很兇但特別怕打雷的Snow，很喜歡吃冰，冰冰的水也喜歡，如果摸他的額頭會發出吹口哨的聲...</p>
-                <a href="#" class="btn w-100 kalam fw-bold border-top pt-3 hover-custom-text-color">More</a>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
               </div>
             </div>
           </div>
+
+          <div class="col my-3">
+            <div class="card shadow rounded-4 border-0">
+              <img src="./images/dog06.png" class="card-img-top  rounded-top-4" alt="dog01">
+              <div class="card-body">
+                <h5 class="card-title h6 fw-bold">等家中-華仔</h5>
+                <p class="card-text">目前7個月大的華仔，是個愛笑的貪吃鬼，喜歡吃西瓜還有蓮霧，是一隻吃素的乖狗狗，會挑食不喜歡...</p>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow rounded-4 border-0">
+              <img src="./images/07.png" class="card-img-top  rounded-top-4" alt="04">
+              <div class="card-body">
+                <h5 class="card-title h6 fw-bold">等家中-小呆</h5>
+                <p class="card-text">小呆有著圓圓的大眼睛，一歲的他來自台中，原本陪著一位老奶奶生活，上個月奶奶行動不便不能再陪...</p>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <div class="card shadow rounded-4 border-0">
+              <img src="./images/05.png" class="card-img-top  rounded-top-4" alt="08">
+              <div class="card-body">
+                <h5 class="card-title h6 fw-bold">等家中-Snow</h5>
+                <p class="card-text">看起來很兇但特別怕打雷的Snow，很喜歡吃冰，冰冰的水也喜歡，如果摸他的額頭會發出吹口哨的聲...</p>
+                <a href="./pet_story.html" class="btn w-100 kalam border-top pt-3 fw-bold">More</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="div text-center py-5">
-          <a href="#" class="btn px-5 py-2  border border-2 rounded-pill hover-custom-color">看看更多浪浪</a>
-      </div>
+
+        <div class="mt-5">
+            <nav aria-label="Page navigation ">
+                <ul class="pagination pagination-border-none d-flex justify-content-center">
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#"><i class="bi bi-caret-left"></i></a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link kalam fw-bold link-custom-color-dark" href="#"><i class="bi bi-caret-right"></i></a></li>
+                </ul>
+              </nav>
+        </div>
+
+
       </section>
 
       <!--橘色分割線-->
@@ -194,7 +169,7 @@
                   <div class="card-body">
                     <h5 class="card-title h5">加入奴才團隊</h5>
                     <p class="card-text h6">我也會畫畫，希望能盡一份心力！</p>
-                    <a href="./form.html" class="btn btn-custom border border-custom-color-dark px-5 rounded-pill">聯絡我們</a>
+                    <a href="./pet_story.html" class="btn btn-custom border border-custom-color-dark px-5 rounded-pill">聯絡我們</a>
                   </div>
                 </div>
               </div>
@@ -204,20 +179,21 @@
           
           <div class="col-10 col-lg-4 ">
             <div class="card mb-3 border-0 text-center text-md-start" >
-              <div class="row g-0">
+              <div class="row g-0 ">
                 <div class="col-md-4 d-flex align-items-center justify-content-center">
                   <img src="./images/link02.png" class="img-fluid rounded-start" alt="link02" width="200px" height="127px">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body" >
-                    <h5 class="card-title h5">加入奴才團隊</h5>
+                    <h5 class="card-title h5 ">加入奴才團隊</h5>
                     <p class="card-text h6">我願意領養，希望能盡一份心力！</p>
-                    <a href="./adopt.html" class="btn btn-custom border border-custom-color-dark px-5 rounded-pill">領養專區</a>
+                    <a href="./pet_story.html" class="btn btn-custom border border-custom-color-dark px-5 rounded-pill">領養專區</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
